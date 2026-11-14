@@ -8,7 +8,7 @@
     python3 gen_ninja.py && ninja build   # → out/<cmd>.elf
     ninja pack                            # → out/leopard-coreutils-*.xbps
 
-- 依赖 `../XJ380-SDK`（官方运行时 + `start.cpp` 入口）。
+- 依赖 `../XACT-CRT`（官方运行时 + `start.cpp` 入口）。
 - `lib/core.c` 提供递归复制/删除、mkdir -p 等公共实现。
 - 只使用 v5 SDK 的 POSIX 封装（open/read/write/opendir/stat/…）。
 
