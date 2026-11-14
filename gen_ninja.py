@@ -4,8 +4,8 @@ import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-SDK  = ROOT / ".." / "leopard-sdk"
-INC  = SDK / "include"
+SDK  = ROOT / ".." / "XJ380-SDK"
+INC  = SDK / "src" / "include"
 OBJ  = SDK / "obj-tui"
 OUT  = ROOT / "out"
 
@@ -27,7 +27,7 @@ RUNTIME = ["arch/x86_64/crt0.S.o", "libsys.cpp.o",
            "ctype.cpp.o", "permissions.cpp.o", "posix_fs.cpp.o",
            "posix_time.cpp.o", "posix_ioctl.cpp.o", "xcrypto_random.cpp.o"]
 LIBALLOC = OBJ / "liballoc-x86_64.a"
-CRT      = SDK / "obj-extra" / "constart.cpp.o"
+CRT      = SDK / "obj-extra" / "start.cpp.o"
 
 
 def rel(p):
