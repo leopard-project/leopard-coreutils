@@ -18,8 +18,8 @@ PKGVER  = "1.0_1"
 ARCH    = "x86_64"
 DESC    = "LeopardOS basic user commands"
 
-# XACT CRT（../XJ380-SDK/out/crt）：启动对象 + 静态运行时 + 分配器
-CRT_ROOT = ROOT / ".." / "XJ380-SDK"
+# XACT CRT（../leopard-sdk/out/crt）：启动对象 + 静态运行时 + 分配器
+CRT_ROOT = ROOT / ".." / "leopard-sdk"
 INC      = CRT_ROOT / "out" / "crt" / "include"
 LIB      = CRT_ROOT / "out" / "crt" / "lib" / "x86_64"
 CRT_OBJS = [LIB / "crt0.o", LIB / "start.o"]
